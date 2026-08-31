@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { ImageGrid } from './components/image-grid/image-grid';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ImageGrid],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('image-grid-app');
-}
+export class App {}
